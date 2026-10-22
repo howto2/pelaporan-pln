@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e9f0f7;
+        }
+
+        .navbar {
+            background-color: #1d4ed8;
+        }
+
+        .filter-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .report-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .judul {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0;
+            text-shadow: 2px 2px 5px #ccc;
+        }
+
+        .btn-delete {
+            background-color: red;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/pln.png" alt="PLN Logo" width="40" height="40" class="me-2">
+                <div>
+                    <div>PT. PLN (Persero)</div>
+                </div>
+            </a>
+            <div class="d-flex">
+                <a href="#" class="text-white text-decoration-none">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+
+        <div class="judul">Daftar Laporan Operasi</div>
+
+        <!-- Filter Form -->
+        <div class="filter-box">
+            <form class="row g-2 align-items-center">
+                <div class="col-md-6">
+                    <input type="date" class="form-control" name="tanggal">
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select" name="shift">
+                        <option value="">Semua</option>
+                        <option value="07:00">07:00 WITA</option>
+                        <option value="12:00">12:00 WITA</option>
+                        <option value="15:00">15:00 WITA</option>
+                        <option value="18:00">18:00 WITA</option>
+                    </select>
+                </div>
+                <div class="col-md-2 d-grid">
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Report Section -->
+        <div class="report-box">
+            <div class="text-center">
+                <button class="btn btn-delete">Hapus Laporan</button>
+            </div>
+
+            <div class="text-center mt-3">
+                <p>Jumat, 25 April 2025 Shift: 12:00 WITA</p>
+                <p>--------------------------------------------</p>
+                <h5>UP PLTD PLTD Samarinda</h5>
+
+                <div class="text-start">
+                    <p><strong>#Unit 1</strong><br>
+                        Beban: 300 MW<br>
+                        Status: OPERASI<br>
+                        Test kesiapan operasi: 4 Maret 2022<br>
+                        Catatan: oee
+                    </p>
+
+                    <p><strong>Unit #2</strong><br>
+                        Beban: 201 MW<br>
+                        Status: OPERASI<br>
+                        Test kesiapan operasi: 6 Januari 2025<br>
+                        Catatan: eeeee
+                    </p>
+
+                    <p><strong>TOTAL PLTD Samarinda: 501.0 MW</strong></p>
+
+                    <p><strong>STOCK ENERGI PRIMER PLTD Samarinda</strong></p>
+                    <p>HSD<br>
+                        - Penerimaan: 900 Liter<br>
+                        - Pemakaian: 800 Liter<br>
+                        - Stok: 8 Hari
+                    </p>
+
+                    <p>MFO<br>
+                        - Penerimaan: 2.5 Liter<br>
+                        - Pemakaian: 2 Liter<br>
+                        - Stok: 2 Hari
+                    </p>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button class="btn btn-whatsapp">Kirim WhatsApp</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
