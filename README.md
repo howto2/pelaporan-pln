@@ -63,7 +63,7 @@ pelaporan-pln/
 Mengembangkan aplikasi web untuk mendukung pengelolaan laporan operasi secara terstruktur, mempermudah akses terhadap data laporan, serta membantu dokumentasi laporan dalam bentuk digital.
 
 ## 👨‍💻 Pengembang
-
+Enriko Danu Raharja & M. Zakki Nabilah
 GitHub: [howto2](https://github.com/howto2)
 
 ## 📌 Repository
